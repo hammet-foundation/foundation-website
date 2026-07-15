@@ -31,12 +31,9 @@ export function Nav() {
     >
       <div className="mx-auto max-w-7xl px-5 md:px-8 h-16 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2 group">
-          <span
-            aria-hidden
-            className="h-8 w-8 rounded-lg bg-[color:var(--indigo)] grid place-items-center text-[color:var(--cyan)] font-bold"
-          >
-            H
-          </span>
+          <div>
+            <img src="/favicon.ico" alt="Hero" />
+          </div>
           <span className="font-semibold text-[color:var(--indigo)] tracking-tight">
             Hammet Research Foundation
           </span>
