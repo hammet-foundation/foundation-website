@@ -9,7 +9,7 @@ const team = [
   },
   {
     name: "Angel Nwafor",
-    title: "Head of Operations & Programs",
+    title: "Head of Operations & Responsible AI",
     bio: "Runs day-to-day operations and delivery of programs across partner schools.",
   },
   {
