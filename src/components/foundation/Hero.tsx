@@ -1,4 +1,5 @@
 import { ArrowRight, ChevronDown } from "lucide-react";
+import { Link } from "@tanstack/react-router"
 
 export function Hero() {
   return (
@@ -47,28 +48,51 @@ export function Hero() {
             underserved communities.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
-            <a
-              href="#contact"
+            <Link
+              to="/"
+              hash="contact"
               className="inline-flex items-center gap-2 rounded-full bg-[color:var(--cyan)] px-6 py-3 text-sm font-semibold text-[color:var(--indigo)] hover:bg-white transition-colors"
             >
               Partner With Us <ArrowRight size={16} />
-            </a>
-            <a
-              href="#impact"
+            </Link>
+            <Link
+              to="/"
+              hash="impact"
               className="inline-flex items-center gap-2 rounded-full border border-[color:var(--offwhite)]/40 px-6 py-3 text-sm font-semibold text-[color:var(--offwhite)] hover:bg-white/10 transition-colors"
             >
               See Our Impact
+            </Link>
+          </div>
+
+          <div className="mt-6 flex flex-wrap gap-3">
+            <a
+              href="/classroom"
+              className="inline-flex items-center gap-2 rounded-full border border-[color:var(--cyan)]/40 px-5 py-2 text-sm font-medium text-[color:var(--cyan)] hover:bg-[color:var(--cyan)] hover:text-[color:var(--indigo)] transition-colors"
+            >
+              AI Classroom
+              <ArrowRight size={14} />
             </a>
+
+            {/*
+            <a
+              href="/teacher"
+              className="inline-flex items-center gap-2 rounded-full border border-[color:var(--cyan)]/40 px-5 py-2 text-sm font-medium text-[color:var(--cyan)] hover:bg-[color:var(--cyan)] hover:text-[color:var(--indigo)] transition-colors"
+            >
+              Teacher Portal
+              <ArrowRight size={14} />
+            </a>
+            */}
           </div>
         </div>
 
-        <a
-          href="#mission"
+        <Link
+          to="/"
+          hash="mission"
           aria-label="Scroll to mission"
           className="hidden md:flex absolute bottom-6 left-1/2 -translate-x-1/2 items-center justify-center h-10 w-10 rounded-full border border-[color:var(--offwhite)]/30 text-[color:var(--offwhite)]/70 hover:text-[color:var(--cyan)] hover:border-[color:var(--cyan)] transition-colors"
         >
           <ChevronDown size={18} />
-        </a>
+        </Link>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import { Linkedin, Twitter, Instagram, Mail } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 
 export function Footer() {
   return (
@@ -7,7 +8,7 @@ export function Footer() {
       style={{ background: "linear-gradient(180deg, #2d004e 0%, #1c0033 100%)" }}
     >
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16">
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="grid gap-10 md:grid-cols-4">
           <div>
             <div className="flex items-center gap-2">
               <span
@@ -31,18 +32,18 @@ export function Footer() {
             </p>
             <ul className="mt-4 space-y-2 text-sm text-[color:var(--offwhite)]/80">
               {[
-                ["Mission", "#mission"],
-                ["Programs", "#programs"],
-                ["Impact", "#impact"],
-                ["Partners", "#partners"],
-                ["Team", "#team"],
-                ["Get Involved", "#get-involved"],
-                ["Contact", "#contact"],
+                ["Mission", "mission"],
+                ["Programs", "programs"],
+                ["Impact", "impact"],
+                ["Partners", "partners"],
+                ["Team", "team"],
+                ["Get Involved", "get-involved"],
+                ["Contact", "contact"],
               ].map(([l, h]) => (
                 <li key={h}>
-                  <a href={h} className="hover:text-[color:var(--cyan)]">
+                  <Link to="/" hash={h} className="hover:text-[color:var(--cyan)]">
                     {l}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -74,6 +75,34 @@ export function Footer() {
                 </a>
               ))}
             </div>
+          </div>
+          
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-widest text-[color:var(--cyan)]">
+              Resources
+            </p>
+
+            <ul className="mt-4 space-y-2 text-sm text-[color:var(--offwhite)]/80">
+              <li>
+                <Link
+                  to="/classroom"
+                  className="hover:text-[color:var(--cyan)] transition-colors"
+                >
+                  AI Classroom
+                </Link>
+              </li>
+
+              {/*
+              <li>
+                <a
+                  href="/teacher"
+                  className="hover:text-[color:var(--cyan)] transition-colors"
+                >
+                  Teacher Portal
+                </a>
+              </li>
+              */}
+            </ul>
           </div>
         </div>
 
