@@ -57,7 +57,7 @@ function AILiteracyPage() {
 
       {/* HERO */}
       <section
-        className="relative overflow-hidden pt-32 pb-28 text-white"
+        className="relative overflow-hidden pt-32 pb-48 text-white"
         style={{
           background:
             "radial-gradient(1200px 600px at 20% 10%, rgba(127,128,255,.55), transparent 60%), radial-gradient(900px 500px at 90% 80%, rgba(0,255,255,.18), transparent 60%), linear-gradient(180deg,#3a0068 0%,#4b0082 60%,#2d004e 100%)",
@@ -105,7 +105,7 @@ function AILiteracyPage() {
 
       {/* STATS */}
 
-      <section className="mx-auto -mt-16 max-w-7xl px-6 relative z-20">
+      <section className="mx-auto -mt-24 max-w-7xl px-6 relative z-20">
         <div className="grid gap-6 md:grid-cols-3">
 
           <Stat
