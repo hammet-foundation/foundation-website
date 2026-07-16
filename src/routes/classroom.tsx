@@ -56,15 +56,14 @@ function AILiteracyPage() {
       <Nav />
         
       <section
-        className="relative overflow-hidden pt-32 pb-48 text-white"
+        className="relative overflow-hidden py-24 text-white"
         style={{
           background:
             "radial-gradient(1200px 600px at 20% 10%, rgba(127,128,255,.55), transparent 60%), radial-gradient(900px 500px at 90% 80%, rgba(0,255,255,.18), transparent 60%), linear-gradient(180deg,#3a0068 0%,#4b0082 60%,#2d004e 100%)",
         }}
       >
         {/* HERO */}
-        <div className="mx-auto max-w-7xl px-6 pt-32 pb-32">
-
+        <div className="mx-auto max-w-7xl px-6">
           <span className="rounded-full border border-cyan-300/30 bg-white/5 px-4 py-2 text-sm uppercase tracking-wider">
             AI Literacy Initiative
           </span>
@@ -100,27 +99,28 @@ function AILiteracyPage() {
               Learn More
             </a>
           </div>
-        </div>
+        
 
-        {/* STATS */}
-        <div className="mx-auto max-w-7xl px-6 translate-y-16">
-          <div className="grid gap-6 md:grid-cols-3">
+          {/* STATS */}
+          <div className="mt-16">
+            <div className="grid gap-6 md:grid-cols-3">
 
-            <Stat
-              number="90%"
-              label="Youth leave school without practical AI literacy."
-            />
+              <Stat
+                number="90%"
+                label="Youth leave school without practical AI literacy."
+              />
 
-            <Stat
-              number="420M+"
-              label="Africans between ages 15 and 35."
-            />
+              <Stat
+                number="420M+"
+                label="Africans between ages 15 and 35."
+              />
 
-            <Stat
-              number="Weekly"
-              label="Free AI literacy sessions for Africans."
-            />
+              <Stat
+                number="Weekly"
+                label="Free AI literacy sessions for Africans."
+              />
 
+            </div>
           </div>
         </div>
       </section>
