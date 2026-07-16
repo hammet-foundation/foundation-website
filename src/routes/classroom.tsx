@@ -54,58 +54,56 @@ function AILiteracyPage() {
   return (
     <div className="min-h-screen bg-[color:var(--offwhite)] text-[color:var(--indigo)]">
       <Nav />
-      <section className="relative">
+        
+      <section
+        className="relative overflow-hidden pt-32 pb-48 text-white"
+        style={{
+          background:
+            "radial-gradient(1200px 600px at 20% 10%, rgba(127,128,255,.55), transparent 60%), radial-gradient(900px 500px at 90% 80%, rgba(0,255,255,.18), transparent 60%), linear-gradient(180deg,#3a0068 0%,#4b0082 60%,#2d004e 100%)",
+        }}
+      >
         {/* HERO */}
-        <section
-          className="relative overflow-hidden pt-32 pb-48 text-white"
-          style={{
-            background:
-              "radial-gradient(1200px 600px at 20% 10%, rgba(127,128,255,.55), transparent 60%), radial-gradient(900px 500px at 90% 80%, rgba(0,255,255,.18), transparent 60%), linear-gradient(180deg,#3a0068 0%,#4b0082 60%,#2d004e 100%)",
-          }}
-        >
-          <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-6 pt-32 pb-32">
 
-            <span className="rounded-full border border-cyan-300/30 bg-white/5 px-4 py-2 text-sm uppercase tracking-wider">
-              AI Literacy Initiative
+          <span className="rounded-full border border-cyan-300/30 bg-white/5 px-4 py-2 text-sm uppercase tracking-wider">
+            AI Literacy Initiative
+          </span>
+
+          <h1 className="mt-8 max-w-5xl text-5xl font-bold leading-tight lg:text-7xl">
+            90% of Africa's youth leave school
+            <span className="block text-cyan-300">
+              without basic AI skills.
             </span>
+          </h1>
 
-            <h1 className="mt-8 max-w-5xl text-5xl font-bold leading-tight lg:text-7xl">
-              90% of Africa's youth leave school
-              <span className="block text-cyan-300">
-                without basic AI skills.
-              </span>
-            </h1>
+          <p className="mt-8 max-w-3xl text-xl leading-8 text-white/85">
+            Africa has more than <strong>420 million young people</strong>.
+            Hundreds of millions are entering the future without the skills to
+            understand, use, or benefit from Artificial Intelligence.
+          </p>
 
-            <p className="mt-8 max-w-3xl text-xl leading-8 text-white/85">
-              Africa has more than <strong>420 million young people</strong>.
-              Hundreds of millions are entering the future without the skills to
-              understand, use, or benefit from Artificial Intelligence.
-            </p>
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a
+              href="https://tally.so/r/OD9AE7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-cyan-300 px-8 py-4 font-semibold text-[color:var(--indigo)] transition hover:bg-white"
+            >
+              Join Weekly Sessions
+              <ArrowRight size={18} />
+            </a>
 
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href="https://tally.so/r/OD9AE7"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-cyan-300 px-8 py-4 font-semibold text-[color:var(--indigo)] transition hover:bg-white"
-              >
-                Join Weekly Sessions
-                <ArrowRight size={18} />
-              </a>
-
-              <a
-                href="#about"
-                className="rounded-full border border-white/30 px-8 py-4 hover:bg-white/10"
-              >
-                Learn More
-              </a>
-            </div>
+            <a
+              href="#about"
+              className="rounded-full border border-white/30 px-8 py-4 hover:bg-white/10"
+            >
+              Learn More
+            </a>
           </div>
-        </section>
+        </div>
 
         {/* STATS */}
-
-        <section className="mx-auto -mt-24 max-w-7xl px-6 relative z-20">
+        <div className="mx-auto max-w-7xl px-6 translate-y-16">
           <div className="grid gap-6 md:grid-cols-3">
 
             <Stat
@@ -124,14 +122,15 @@ function AILiteracyPage() {
             />
 
           </div>
-        </section>
+        </div>
       </section>
+
 
       {/* ABOUT */}
 
       <section
         id="about"
-        className="mx-auto max-w-7xl px-6 py-24"
+        className="mx-auto max-w-7xl px-6 pt-32 py-24"
       >
         <div className="max-w-4xl">
 
