@@ -53,10 +53,10 @@ export function Footer() {
               Contact
             </p>
             <a
-              href="mailto:hello@hammetfoundation.org"
+              href="mailto:hammetfoundation@gmail.com"
               className="mt-4 inline-flex items-center gap-2 text-sm hover:text-[color:var(--cyan)]"
             >
-              <Mail size={16} /> hello@hammetfoundation.org
+              <Mail size={16} /> hammetfoundation@gmail.com
             </a>
             <div className="mt-6 flex gap-3">
               {[

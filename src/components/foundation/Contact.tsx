@@ -21,7 +21,7 @@ export function Contact() {
     const body = encodeURIComponent(
       `Name: ${f.get("name")}\nOrganization: ${f.get("organization")}\nEmail: ${f.get("email")}\nType: ${f.get("type")}\n\n${f.get("message")}`,
     );
-    window.location.href = `mailto:hello@hammetfoundation.org?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:hammetfoundation@gmail.com?subject=${subject}&body=${body}`;
     setSent(true);
   };
 
@@ -53,9 +53,9 @@ export function Contact() {
                   If it didn't, write to us directly at{" "}
                   <a
                     className="underline"
-                    href="mailto:hello@hammetfoundation.org"
+                    href="mailto:hammetfoundation@gmail.com"
                   >
-                    hello@hammetfoundation.org
+                    hammetfoundation@gmail.com
                   </a>
                   .
                 </p>
@@ -110,9 +110,9 @@ export function Contact() {
                   Or email{" "}
                   <a
                     className="underline"
-                    href="mailto:hello@hammetfoundation.org"
+                    href="mailto:hammetfoundation@gmail.com"
                   >
-                    hello@hammetfoundation.org
+                    hammetfoundation@gmail.com
                   </a>{" "}
                   directly.
                 </p>
