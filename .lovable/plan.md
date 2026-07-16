@@ -70,7 +70,7 @@ Single-page scroll with sticky top nav (anchor links: Mission, Programs, Impact,
 9. **Contact + Footer** — "Let's build this together." Contact form (name, organization, email, inquiry type dropdown, message). Form submits client-side to a `mailto:` fallback (no backend requested); we render a success state. Deep Indigo footer with:
    - Off-white foundation description
    - Registration line: **"Registered in Nigeria as an Incorporated Trustee."** (pending removed)
-   - Contact email: `hello@hammetfoundation.org`
+   - Contact email: `hammetfoundation@gmail.com`
    - Social links (X, LinkedIn, Instagram) as Lucide icons
    - Closing tagline verbatim
 
